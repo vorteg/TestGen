@@ -62,6 +62,12 @@ class BaseDecorate(object):
     def initialize_variables_dec(cls,func):
         def func_wrapper(self):
             if self.initialize_variables_already:
+                logger.info("Already initialize_variables_dec")
+                return
+            ret_val = func(self)
+            self.initialize_variables_already = True
+            return ret_val
+        return func_wrapper
 
 
 class Testing(Base):
