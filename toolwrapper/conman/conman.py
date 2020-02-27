@@ -21,14 +21,10 @@ CONMAN_FOLDER="ISSDCM"
      :purpose: Conman does the drives managment
 
 """
-def run(*args):
+def run():
 
-    try:
-        if  os.path.exists(CONMAN_FOLDR):
-            logger.info("ConMan Folder does not exist")
-    except Exception:
-        logger.critical('Got exception on main handler', exc_info=True)
-        raise
+    print("Hi I'm conman")
+    logger.info("ConMan was executed")
 
 if __name__ == '__main__':
     run()

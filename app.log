@@ -1,7 +1,3 @@
-22-Feb-20 17:46:08 - root - DEBUG- TestGen This will get logged
-22-Feb-20 17:46:08 - root - WARNING- This will get logged to a file
-22-Feb-20 17:46:08 - utils.features.logger.logger - CRITICAL- Got exception on main handler
-Traceback (most recent call last):
-  File "./conman.py", line 19, in run
-    if  os.path.exists(CONMAN_FOLDR):
-NameError: name 'CONMAN_FOLDR' is not defined
+27-Feb-20 07:11:06 - root - DEBUG- TestGen This will get logged
+27-Feb-20 07:11:06 - root - WARNING- This will get logged to a file
+27-Feb-20 07:11:06 - utils.features.logger.logger - INFO- ConMan was executed
